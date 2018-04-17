@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+}
+.App{
+  background: #00B4B1;
+  width: 100vw;
+  height: 100vh;
+}
+.center{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:80vh;
+  width:80vw;
+}
+
+p{
+ 
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  background-color: #00908E;
+  opacity: .7;
+  font-size: 3em;
+  margin-top: -.08em;
+  text-align: center;
+  width: 100vw;
+  
+}
