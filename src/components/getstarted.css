@@ -2,11 +2,32 @@
 .get-started-button{
     border-radius: 10em;
     border: none;
-    background: rgb(255, 255, 255);
-    margin: 0 auto;
-    font-size: 3em;
+    background: #F9E093;
+    color: white;
+    font-size: 2em;
     height:3em;
     width: 10em;
     font-family: 'Quicksand', sans-serif;
-    
+    box-shadow: 1px 2px #888888;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 1px rgb(90, 89, 89), 1px 1px 1px #111;
 }
+@media only screen and (max-width: 520px) {
+
+    .get-started-button {
+    font-size: 1.5em;
+    height:2.5em;
+    width: 9em;
+
+    }
+  }
+  @media only screen and (max-width: 320px) {
+
+    .get-started-button {
+    font-size: 1em;
+    height:1.5em;
+    width: 7em;
+
+    }
+  }

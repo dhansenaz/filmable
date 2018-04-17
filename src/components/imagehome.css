@@ -1,11 +1,10 @@
 
 img{
 
-    width:100vw;
-    /* height:20em; */
+    width:100%;
     background-size: cover;
     overflow: hidden;
-    opacity: .8;
-    filter: grayscale(1)
+    opacity: .7;
+    filter: grayscale(2)
      
 }

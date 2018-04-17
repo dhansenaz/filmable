@@ -3,16 +3,21 @@ body{
 }
 .App{
   background: #00B4B1;
-  width: 100vw;
-  height: 100vh;
+ 
 }
 .center{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:80vh;
-  width:80vw;
+  width: 100%;
+}
+.p-container{
+  background-color: #00908E;
+  height: 200px;
+  width: 100%;
+  margin-top: -.25em;
+
 }
 
 p{
@@ -20,11 +25,28 @@ p{
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-style: italic;
-  background-color: #00908E;
   opacity: .7;
   font-size: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-top: -.08em;
+  padding-top: .2em;
   text-align: center;
-  width: 100vw;
+
   
+}
+@media only screen and (max-width: 580px) {
+
+  p {
+     font-size: 2.5em;
+     padding-top:.5em;
+  }
+}
+@media only screen and (max-width: 512px) {
+
+  p {
+     font-size:1.9em;
+     padding-top:.7em;
+     
+  }
 }
