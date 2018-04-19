@@ -15,5 +15,6 @@ massive(process.env.CONNECTION_STRING).then(database => {
 })
 
 app.get('/api/ourfestivals',ctrl.getOurList)
+app.get('/api/genres', ctrl.displayGenres)
 
 app.listen(PORT, () => console.log("You are running on port 4000"))

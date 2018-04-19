@@ -7,27 +7,34 @@ body{
    
   
   }
+  .list img{
+      height:100px;
+      width:150px;
+      display: block;
+      
+  }
   a{
       text-decoration: none;
       color:#00908E;
+      margin-left: 150px;
   }
   .list{
       width:30em;
       background-color: rgba(148, 147, 147, 0.467);
       padding: -5px;
       margin-top: 3em;
-      justify-content: space-between;
   }
   .list > div{
       padding: 3px;
+      margin-left: 150px;
   }
   .list-container{
         display: flex;
         flex-direction: column;
-        align-items: left;
         width: 100%;
         height: 15em;
         justify-content: center;
+        margin-left: 20px;
       }
 
 

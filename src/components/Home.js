@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <div className="Home">
       <div className="center">
-        <h2>Find the Perfect Festival....</h2>
+        <p>Find the Perfect Festival</p>
+        <p className='p2'> Build your own custom list using our currated list of the top Film Festivals in the world.</p> 
 
         <div className="button-container">
           <Link to="/createyourown">

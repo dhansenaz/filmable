@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import './ourlist.css'
 import {Link} from 'react-router-dom'
+import  './sundance-film-festival.png'
 
 class OurList extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class OurList extends Component {
       return (
         <div className='list-container'>
           <ul className='list'>
-            <div> Festival Start Date - {element.start_date}</div>
+            <div>Festival Start Date - {element.start_date}</div>
             <div>Festival End Date - {element.end_date}</div>
             <div>Early Submission Date - {element.early_submission_date}</div>
             <div>Final Submission Date - {element.final_submission_date}</div>

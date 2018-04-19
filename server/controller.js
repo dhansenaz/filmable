@@ -10,5 +10,15 @@ module.exports = {
             console.log(error)
         }) 
 
+    },
+    
+    displayGenres:(request, response) =>{
+        const db = request.app.get('db')
+
+        db.displayGenres().then(genres => {
+            response.status().send(genres)
+            console.log(genres)
+        }
+
     }
 }

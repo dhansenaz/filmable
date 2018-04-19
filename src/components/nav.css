@@ -20,25 +20,25 @@
 
 }
 .nav-container {
-    animation:  ease-in-ease-out 20s infinite;
+    animation:  ease-in-ease-out 15s infinite;
   }
   
   @keyframes ease-in-ease-out {
    
     0%{
-        background-color:rgb(3, 163, 161);
+        background-color:rgb(0, 167, 164);
     }
     20%{
-        background-color:rgba(49, 52, 102, 0.986);
+        background-color:rgb(0, 146, 144);
     }
     40% {
-        background-color: rgb(158, 57, 50);
+        background-color: rgb(0, 122, 120);
       }
       70%{
-        background-color:#00908E;
+        background-color:rgb(0, 167, 164);
     }
     100%{
-        background-color:rgb(3, 163, 161);
+        background-color:rgb(0, 179, 176);
     }
     
   }
