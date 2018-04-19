@@ -1,0 +1,34 @@
+body{
+    background: url('office.jpg') no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+  
+  }
+  a{
+      text-decoration: none;
+      color:#00908E;
+  }
+  .list{
+      width:30em;
+      background-color: rgba(148, 147, 147, 0.467);
+      padding: -5px;
+      margin-top: 3em;
+      justify-content: space-between;
+  }
+  .list > div{
+      padding: 3px;
+  }
+  .list-container{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        height: 15em;
+        justify-content: center;
+      }
+
+
+  
