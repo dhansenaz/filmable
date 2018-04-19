@@ -16,9 +16,9 @@ module.exports = {
         const db = request.app.get('db')
 
         db.displayGenres().then(genres => {
-            response.status().send(genres)
+            response.status(200).send(genres)
             console.log(genres)
-        }
+        })
 
     }
 }

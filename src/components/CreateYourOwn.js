@@ -2,34 +2,58 @@ import React, { Component } from "react";
 import "./createyourown.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import axios from "axios";
 
 class CreateYourOwn extends Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      genres: [],
+      selected: [],
+      showGenres: false
+    };
+    this.mapGenres = this.mapGenres.bind(this);
   }
+  componentDidMount() {
+    axios.get("/api/genres").then(response => {
+      this.setState({ genres: response.data });
+      console.log(response.data);
+    });
+  }
+
+  mapGenres() {
+    let displayGenres = null;
+    if (this.state.genres.length) {
+      displayGenres = this.state.genres.map(element => {
+        return <div className="genre-container">{element.genre}</div>;
+      });
+    }
+    return displayGenres;
+  }
+
   render() {
     return (
       <div className="main">
         <div className="center">
-          <select className="select1">
-            <option value="Film Type">Fiction</option>
-            <option value="Film Type">Non-Fiction</option>
-          </select>
-          <select className="select2">
-            <option value="Film Genre">Documentary</option>
-            <option value="Film Type">Horror</option>
-            <option value="Film Type">Sci-Fi</option>
-            <option value="Film Type">Animation</option>
-            <option value="Film Type">Drama</option>
-            <option value="Film Type">Suspense</option>
-            <option value="Film Type">Comedy</option>
-            <option value="Film Type">Family</option>
-            <option value="Film Type">Music</option>
-          </select>
-
-          <button className="new-list">Get Your New List</button>
+        <p className="click-all">Click the Show Genres button. Simply click on all the categories that apply. When you're ready click Submit</p>
+          <button
+            onClick={() =>
+              this.setState({ showGenres: !this.state.showGenres })
+            }
+            className="show-genres"
+          >
+            Show Genres
+          </button>
+        <button className="submit">Submit</button>
+          
+        </div>
+        <div className="genrelist">
+          {this.state.showGenres ? <div className="genre-container">{
+            this.state.genres.map(element => {
+              return <div className="genrelist">{element.genre}</div>;
+            })
+          }</div> : <div />}
         </div>
       </div>
     );
