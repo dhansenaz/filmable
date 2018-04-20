@@ -48,14 +48,14 @@ p{
 
 }
 .button-container{
-  width:100%;
+  width:80%;
   display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
   align-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .create-your-own{
     border-radius: 1em;
