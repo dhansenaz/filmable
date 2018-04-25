@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./app.css";
 import "./components/Lafilmfestival.jpg";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -14,7 +13,6 @@ class App extends Component {
 
         {router}
 
-        {/* <Footer /> */}
       </div>
     );
   }

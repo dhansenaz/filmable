@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "./home.css";
 
@@ -9,7 +8,7 @@ export default function Home() {
     <div className="Home">
       <div className="center">
         <p>Find the Perfect Festival</p>
-        <p className='p2'> Build your own custom list using our currated list of the top Film Festivals in the world.</p> 
+        <p className='p2'> Build your own custom list using our currated picks of the top Film Festivals in the world.</p> 
 
         <div className="button-container">
           <Link to="/createyourown">
@@ -20,6 +19,10 @@ export default function Home() {
           </Link>
         </div>
       </div>
+        <div className='black'>
+               <p> We have spent the last 20 years currating the most comprehensive list. 
+                  Now you can spend your time submitting to the best festivals.</p>
+        </div>
     </div>
   );
 }

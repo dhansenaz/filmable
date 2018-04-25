@@ -1,31 +1,29 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
-import './login.css'
+import './signup.css'
 
-class Login extends Component{
+class SignUp extends Component{
     constructor(){
         super()
-        this.state={
-            userName: '',
-            passWord: ''
-        }
     }
     render(){
         return(
-            <div className="login-container">
-                <div className="user-input">
-                    <p className='user-name'>User Name</p>
+            <div className='signup-container' >
+                <div className="login-input">
+                    <p className='user-name'>Email</p>
                 
                     <input />
                     <p className='user-name'>Password</p>
                     <input />
-                    <button className='login-submit'>Login</button>
+                    <button className="login-submit" >Sign Up</button>
                 </div>
+
+
 
 
             </div>
         )
     }
 }
-export default Login
+export default SignUp

@@ -16,7 +16,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  /* width: 100vw; */
   margin-top: -2.5em;
 }
 
@@ -100,19 +100,72 @@ p{
   opacity: .8;
   background-color: black;
 }
-@media only screen and (max-width: 580px) {
+.black{
+  background: black;
+  width: 100%;
+  height: 550px;
+}
+@media only screen and (max-width: 620px) {
 
   p {
      font-size: 2.5em;
      padding-top:.5em;
+     padding: 1em;
   }
 }
 @media only screen and (max-width: 512px) {
 
   p {
-     font-size:1.9em;
+     font-size:1.5em;
      padding-top:.7em;
+     margin-top: 6em;
+     padding: 1em;
      
+  }
+}
+@media only screen and (max-width: 375px) {
+
+  p {
+     font-size:1.5em;
+     margin-top: 6em;
+     padding: 1.5em;
+     margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 620px) {
+
+  p2 {
+     font-size: 2.5em;
+     padding-top:.5em;
+     padding: .75em;
+  }
+}
+@media only screen and (max-width: 512px) {
+
+  p2 {
+     font-size:1.5em;
+     padding-top:.7em;
+     margin-top: 6em;
+     padding: 1em;
+     
+  }
+}
+@media only screen and (max-width: 375px) {
+
+  p2 {
+     font-size:1.5em;
+     margin-top: 6em;
+     padding: 1.5em;
+     margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  .create-your-own {
+  font-size: 1.5em;
+  height:2.5em;
+  width: 9em;
+
   }
 }
 @media only screen and (max-width: 320px) {
@@ -120,16 +173,26 @@ p{
   .create-your-own {
   font-size: 1em;
   height:1.5em;
-  width: 7em;
+  width: 6em;
 
   }
 }
-@media only screen and (max-width: 520px) {
 
-  .create-your-own {
+@media only screen and (max-width: 800px) {
+
+  .see-our-list {
   font-size: 1.5em;
   height:2.5em;
   width: 9em;
+
+  }
+}
+@media only screen and (max-width: 320px) {
+
+  .see-our-list {
+  font-size: 1em;
+  height:1.5em;
+  width: 6em;
 
   }
 }

@@ -37,7 +37,6 @@ festival_id INT REFERENCES festival(id)
 
 );
 
-
 INSERT INTO festivals_genres(genres_id, festival_id)
 VALUES(1, 1)
 

@@ -17,7 +17,16 @@ module.exports = {
 
         db.displayGenres().then(genres => {
             response.status(200).send(genres)
-            console.log(genres)
+            // console.log(genres)
+        })
+
+    },
+    getYourList:(req, res) => {
+        const db = req.app.get('db')
+        
+        db.getYourList().then(festivals_genres => {
+            res.status(200).send(festivals_genres)
+            console.log(festivals_genres)
         })
 
     }
