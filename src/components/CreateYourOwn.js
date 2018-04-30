@@ -12,7 +12,12 @@ class CreateYourOwn extends Component {
     this.state = {
       genres: [],
       selected: [],
-      showGenres: false
+      showGenres: false,
+      fiction: false,
+      nonFiction: false,
+      documentary: false,
+      short: false,
+      long: false
     };
   }
   componentDidMount() {
@@ -21,7 +26,21 @@ class CreateYourOwn extends Component {
     });
   }
 
- 
+  clickFiction(){
+    this.setState({fiction: !this.state.fiction})
+  }
+  clickNonFiction(){
+    this.setState({nonFiction: !this.state.nonFiction})
+  }
+  clickDocumentary(){
+    this.setState({documentary: !this.state.documentary})
+  }
+ clickShort(){
+   this.setState({short: !this.state.short})
+ }
+ clickFeature(){
+   this.setState({long: !this.state.long})
+ }
 
   render() {
     // console.log(this.state.selected)
@@ -29,9 +48,19 @@ class CreateYourOwn extends Component {
       <div className="main">
         <div className="center-create-your-own">
           <p className="click-all">
-            Click the Show Genres button. Simply click on all the categories
+            Tell us about your film. Click any that apply from fiction, non-fiction, documentary, short or long. 
+            Then, click the Show Genres button. Simply click on all the categories
             that apply. When you're ready click Submit
           </p>
+          <div className="button-container-fiction">
+            <button onClick={this.clickFiction.bind(this)} >fiction</button>
+            <button onClick={this.clickDocumentary.bind(this)}>documentary</button>
+            <button onClick={this.clickShort.bind(this)}>short</button>
+            <button onClick={this.clickFeature.bind(this)}>feature</button>
+            
+            
+           { console.log(this.state)}
+          </div>
           <div className="create-your-own-button-container">
            {/* show genres button.  */}
             <button

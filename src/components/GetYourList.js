@@ -1,6 +1,7 @@
 import React,  {Component} from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import "./getyourlist.css"
 
 class GetYourList extends Component{
     constructor(){
@@ -26,9 +27,11 @@ componentDidMount() {
             <div>
                 {this.state.genres ? this.state.genres.map(element => {
                         return(
-                            <div>
-                                {element.contact_person}
-
+                            <div className="new-list-container">
+                                <div>Start Date - {element.start_date}</div>
+                                <div>End Date - {element.end_date}</div>
+                                <div>Contact person - {element.contact_person}</div>
+                                <div>Contact Email - {element.contact_email}</div>
                             </div>
                         )
                 }) : null}

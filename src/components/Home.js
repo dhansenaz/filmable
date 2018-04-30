@@ -21,7 +21,7 @@ export default function Home() {
       </div>
         <div className='black'>
                <p> We have spent the last 20 years currating the most comprehensive list. 
-                  Now you can spend your time submitting to the best festivals.</p>
+                  Now you can spend your time submitting to the best festivals instead of spending hours doing research.</p>
         </div>
     </div>
   );
