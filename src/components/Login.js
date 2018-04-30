@@ -17,10 +17,11 @@ class Login extends Component{
         // console.log(email, password)
         axios.post('/api/finduser', {email, password}).then( response => {
             this.setState({user: response.data})
+
+            console.log(response.data)
         })
     }
     render(){
-        // console.log(this.state)
         return(
             <div className="login-container">
                 <div className="user-input">
@@ -29,7 +30,7 @@ class Login extends Component{
                     <input onChange={ (e) => this.setState({email: e.target.value})}/>
                     <p className='user-name'>Password</p>
                     <input onChange={ (e) => this.setState({password: e.target.value})}/>
-                    <button onClick={this.login.bind(this)} className='login-submit'>Login</button>
+                    <Link to="/profile"><button onClick={this.login.bind(this)} className='signup-submit'>Login</button></Link>
                 </div>
 
 

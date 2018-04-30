@@ -22,7 +22,7 @@ class OurList extends Component {
       return (
         <div className='list-container'>
           <ul className='list'>
-          <img class="img-circle" />
+          <img className="img-circle" />
             
             <div>Festival Name - {element.festival_name}</div>
             <div>Festival Start Date - {element.start_date}</div>

@@ -1,12 +1,13 @@
 
 .new-list-container {
     width:30em;
-    background-color: rgba(148, 147, 147, 0.467);
+    background-color:#00908E;
     padding: -5px;
     margin-top: 3em;
     border-radius: 25px;
 }
 .new-list-container > div{
-    padding: 3px;
-    margin-left: 150px;
+    padding: 5px;
+    margin-left: 2em;
+    font-family: 'Quicksand', sans-serif;
 }

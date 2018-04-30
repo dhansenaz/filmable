@@ -8,7 +8,7 @@ export default function Home() {
     <div className="Home">
       <div className="center">
         <p>Find the Perfect Festival</p>
-        <p className='p2'> Build your own custom list using our currated picks of the top Film Festivals in the world.</p> 
+        <p className='p2'> Build your own custom submission list using our currated picks of the top Film Festivals in the world.</p> 
 
         <div className="button-container">
           <Link to="/createyourown">
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </div>
         <div className='black'>
-               <p> We have spent the last 20 years currating the most comprehensive list. 
+               <p> We have spent the last 20 years currating the most comprehensive list of film festivals. 
                   Now you can spend your time submitting to the best festivals instead of spending hours doing research.</p>
         </div>
     </div>

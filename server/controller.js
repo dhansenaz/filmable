@@ -51,7 +51,7 @@ module.exports = {
         db.findUser([email]).then(response => {
             req.session.user = response[0]
             res.status(200).send(req.session.user)
-            res.redirect('/')
+            // res.redirect('/')
             
         })
     }

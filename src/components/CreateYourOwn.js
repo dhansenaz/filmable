@@ -14,7 +14,6 @@ class CreateYourOwn extends Component {
       selected: [],
       showGenres: false,
       fiction: false,
-      nonFiction: false,
       documentary: false,
       short: false,
       long: false
@@ -29,26 +28,23 @@ class CreateYourOwn extends Component {
   clickFiction(){
     this.setState({fiction: !this.state.fiction})
   }
-  clickNonFiction(){
-    this.setState({nonFiction: !this.state.nonFiction})
-  }
+  
   clickDocumentary(){
     this.setState({documentary: !this.state.documentary})
   }
- clickShort(){
+  clickShort(){
    this.setState({short: !this.state.short})
  }
- clickFeature(){
+  clickFeature(){
    this.setState({long: !this.state.long})
  }
 
   render() {
-    // console.log(this.state.selected)
     return (
       <div className="main">
         <div className="center-create-your-own">
           <p className="click-all">
-            Tell us about your film. Click any that apply from fiction, non-fiction, documentary, short or long. 
+            Tell us about your film. Click any that apply. 
             Then, click the Show Genres button. Simply click on all the categories
             that apply. When you're ready click Submit
           </p>

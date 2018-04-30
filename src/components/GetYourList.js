@@ -28,6 +28,7 @@ componentDidMount() {
                 {this.state.genres ? this.state.genres.map(element => {
                         return(
                             <div className="new-list-container">
+                                <div>Festival Name - {element.festival_name}</div>
                                 <div>Start Date - {element.start_date}</div>
                                 <div>End Date - {element.end_date}</div>
                                 <div>Contact person - {element.contact_person}</div>

@@ -1,0 +1,26 @@
+.profile-container{
+    background-color: rgba(148, 147, 147, 0.467);
+    border-radius: 5em;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    margin-top: 5em;
+    
+    
+}
+.profile{
+    padding: 3em;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    
+    
+}
+.my-profile{
+   
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(250, 248, 245);
+    justify-content: left;
+    margin-left: 3em;
+    font-size: 1.5em;
+    
+}

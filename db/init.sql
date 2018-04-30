@@ -72,3 +72,27 @@ email VARCHAR(50) UNIQUE,
 password VARCHAR(25)
 
 );
+SELECT * from users WHERE email = 'dhansen@allthingsdot.com';
+INSERT INTO festival (
+start_date, 
+end_date, 
+early_submission_date,
+final_submission_date,
+submitted_with, 
+fee, 
+website,
+festival_name,
+address)
+
+VALUES(
+'April 25th, 2018',
+'May 2nd, 2018',
+'9/19/2017',
+'12/8/2017',
+'festival freeway',
+45,
+'http://iffboston.org/',
+'IFF Boston',
+'411A Highland Ave #403, Sommerville MA 02144'
+
+);
