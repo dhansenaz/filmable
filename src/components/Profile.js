@@ -3,18 +3,36 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import './profile.css'
 import GetYourList from './GetYourList'
+import Festival from './Festival'
 
 
 class Profile extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            userList: this.props.location.state.newlist || null
+
+        }
+    }
     render(){
+        console.log(this.state)
+        console.log(this.props)
         return(
             <div>
-                <h4 className="my-profile">My Profile</h4>
+                <div className="my-profile">My List</div>
+                
                 <div className="profile-container">
                     
                     <div className="profile">
-                        <GetYourList />
+                            {this.state.userList.map((e) => {
+                                return(
+                                    <Festival>
+                                        {e}
+                                    </Festival>
+                                )
+                            })}
                     </div>
+
                 </div>
             </div>
         )

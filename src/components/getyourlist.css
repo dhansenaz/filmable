@@ -3,8 +3,9 @@
     width:30em;
     background-color:#00908E;
     padding: -5px;
-    margin-top: 3em;
+    margin-top: 5em;
     border-radius: 25px;
+    margin-left: 2em;
 }
 .new-list-container > div{
     padding: 5px;

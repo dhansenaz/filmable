@@ -21,6 +21,7 @@ massive(process.env.CONNECTION_STRING).then(database => {
     app.set('db', database)
 })
 app.post('/api/finduser', ctrl.findUser)
+app.get('/api/queryresults',ctrl.queryResults)
 app.get('/api/ourfestivals',ctrl.getOurList)
 app.get('/api/genres', ctrl.displayGenres)
 app.get('/api/getyourlist',ctrl.getYourList)

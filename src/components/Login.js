@@ -30,7 +30,7 @@ class Login extends Component{
                     <input onChange={ (e) => this.setState({email: e.target.value})}/>
                     <p className='user-name'>Password</p>
                     <input onChange={ (e) => this.setState({password: e.target.value})}/>
-                    <Link to="/profile"><button onClick={this.login.bind(this)} className='signup-submit'>Login</button></Link>
+                    <Link to="/profile"><button onClick={this.login.bind(this)} className='login-submit'>Login</button></Link>
                 </div>
 
 

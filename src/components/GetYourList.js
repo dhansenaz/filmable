@@ -33,6 +33,7 @@ componentDidMount() {
                                 <div>End Date - {element.end_date}</div>
                                 <div>Contact person - {element.contact_person}</div>
                                 <div>Contact Email - {element.contact_email}</div>
+                                <div>Address - {element.address}</div>
                             </div>
                         )
                 }) : null}
