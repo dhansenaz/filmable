@@ -4,8 +4,7 @@ module.exports = {
   getOurList: (request, response) => {
     const db = request.app.get("db");
 
-    db
-      .getOurList()
+    db.getOurList()
       .then(festivals => {
         response.status(200).send(festivals);
         // console.log(festivals)
@@ -20,12 +19,12 @@ module.exports = {
 
     db.displayGenres().then(genres => {
        genres.forEach((e) =>{
-           console.log(e)
+        //    console.log(e)
             e.isClicked = false
         
         })
       response.status(200).send(genres);
-      console.log(genres)
+    //   console.log(genres)
     });
   },
   getYourList: (req, res) => {
@@ -58,8 +57,10 @@ module.exports = {
 //   method to send selected genres and get new festival list that meets that criteria
   queryResults: (req, res) => {
     const db = req.app.get("db");
+    if(!req.query.genre_id) return res.send([])
+    
     let ids = req.query.genre_id;
-    console.log(Array.isArray(ids));
+    console.log(req.query.genre_id)
     if (!Array.isArray(ids)) {
       ids = [+ids];
     } else {

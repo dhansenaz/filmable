@@ -1,31 +1,29 @@
 .profile-container{
     background-color: rgba(148, 147, 147, 0.467);
-    border-radius: 5em;
-    /* margin: 0 auto; */
     display: flex;
-    width: 60%;
+    width: 100%;
     flex-direction: column;
-    /* padding-top: 15em; */
-    /* height: 500px; */
     
     
 }
 
 .profile{
     padding: .5em;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     font-family: 'Quicksand', sans-serif;
+    margin-top: 6em;
     
 }
-.my-profile{
+/* .my-profile{
    
     font-family: 'Quicksand', sans-serif;
     color: rgb(250, 248, 245);
     justify-content: left;
     font-size: 4em;
     padding-top: 2em;
+    padding-left: .5em;
     
-}
+} */
 /* aside{
     position: absolute;
 } */

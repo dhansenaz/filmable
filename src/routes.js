@@ -10,6 +10,7 @@ import Login from './components/Login'
 import SignUp from './components/SignUp'
 import GetYourList from './components/GetYourList'
 import Profile from './components/Profile'
+import MyAccount from './components/MyAccount'
 
 
 
@@ -26,6 +27,8 @@ export default(
         <Route path='/signup' component={SignUp} />
         <Route path='/getyourlist' component={GetYourList} />
         <Route path='/profile' component={Profile} />
+        <Route path='/myaccount' component={MyAccount} />
+        
         
         
         

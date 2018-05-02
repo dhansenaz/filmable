@@ -19,16 +19,16 @@ class Profile extends Component{
         console.log(this.props)
         return(
             <div>
-                <div className="my-profile">My List</div>
                 
                 <div className="profile-container">
+                <div className="my-profile">My List</div>
+                
                     
                     <div className="profile">
                             {this.state.userList.map((e) => {
                                 return(
-                                    <Festival>
-                                        {e}
-                                    </Festival>
+                                    <Festival festival = {e}/>
+                                    
                                 )
                             })}
                     </div>

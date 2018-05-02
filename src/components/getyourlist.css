@@ -1,14 +1,16 @@
 
-.new-list-container {
+/* .new-list-container {
     width:30em;
     background-color:#00908E;
     padding: -5px;
-    margin-top: 5em;
+    margin-top: 1em;
     border-radius: 25px;
     margin-left: 2em;
+    display: flex;
+    flex-direction: column;
 }
 .new-list-container > div{
     padding: 5px;
     margin-left: 2em;
     font-family: 'Quicksand', sans-serif;
-}
+} */
