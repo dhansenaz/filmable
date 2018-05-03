@@ -1,29 +1,49 @@
-.profile-container{
-    background-color: rgba(148, 147, 147, 0.467);
+.profile-festivals-container{
     display: flex;
-    width: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10em;
     
     
 }
 
-.profile{
-    padding: .5em;
-    /* margin: 0 auto; */
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 6em;
+.profile-festivals{
+    width:40em;
+    background-color:#00908E;
+    margin-top: 1em;
+    border-radius: 25px;
+    font-size: .80em;
+    margin: 0 auto;
+    box-shadow: .5px 1px 10px 1px rgb(107, 109, 109) ;
+    opacity: .9;
     
 }
-/* .my-profile{
-   
+.profile-festivals > div{
+    padding: 5px;
+    margin-left: 2em;
     font-family: 'Quicksand', sans-serif;
-    color: rgb(250, 248, 245);
-    justify-content: left;
-    font-size: 4em;
-    padding-top: 2em;
-    padding-left: .5em;
-    
-} */
-/* aside{
-    position: absolute;
-} */
+}
+.save-button-container{
+    width:20%;
+    padding-left: 0;
+    padding-top: 3em;
+    margin-left: 0;
+}
+.save-to-account{
+    border-radius: 1em;
+    border: none;
+    background-color: #111;
+    color: white;
+    font-size: 2em;
+    height:3em;
+    width: 5em;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 1px rgb(196, 194, 194), 1px 1px 1px #111;
+    cursor: pointer;
+    opacity: .4;
+}
+.save-to-account:hover{
+    opacity: .8;
+    background-color: black;
+}

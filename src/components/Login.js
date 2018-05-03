@@ -16,7 +16,11 @@ class Login extends Component{
         const {email, password} = this.state
         // console.log(email, password)
         axios.post('/api/finduser', {email, password}).then( response => {
+            if(email, password){
             this.setState({user: response.data})
+        } else{
+            alert('oops looks like you may have a typo...#devlife')
+        }
 
             console.log(response.data)
         })
@@ -29,8 +33,8 @@ class Login extends Component{
                 
                     <input onChange={ (e) => this.setState({email: e.target.value})}/>
                     <p className='user-name'>Password</p>
-                    <input onChange={ (e) => this.setState({password: e.target.value})}/>
-                    <Link to="/profile"><button onClick={this.login.bind(this)} className='login-submit'>Login</button></Link>
+                    <input type='password'onChange={ (e) => this.setState({password: e.target.value})}/>
+                    <Link to="/myaccount"><button onClick={this.login.bind(this)} className='login-submit'>Login</button></Link>
                 </div>
 
 

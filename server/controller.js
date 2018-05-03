@@ -76,5 +76,11 @@ module.exports = {
     .catch(error => {
         console.log(error);
       });
+  },
+  saveFestivals: (req,res) =>{
+    const db = req.app.get("db");
+    db.saveFestivals().then(() => {
+        
+    })
   }
 };

@@ -133,7 +133,7 @@ class CreateYourOwn extends Component {
                   //checking truthy falsey to change color if clicked
                   <div
                     style={
-                      element.isClicked ? { backgroundColor: "", borderRadius: '5px', padding: '1px',opacity:'.8', boxShadow: '.5px 1px 11px 1px grey' } : null
+                      element.isClicked ? { backgroundColor: "", borderRadius: '5px', padding: '1px',opacity:'.8', boxShadow: '.5px 1px 11px 1px #F9E093' } : null
                     }
                     onClick={() => {
                       this.matchFestivalGenres(element);

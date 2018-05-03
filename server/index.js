@@ -26,4 +26,6 @@ app.get('/api/ourfestivals',ctrl.getOurList)
 app.get('/api/genres', ctrl.displayGenres)
 app.get('/api/getyourlist',ctrl.getYourList)
 app.post('/api/newuser', ctrl.createUser)
+app.put('/api/savefestivals', ctrl.saveFestivals)
+
 app.listen(PORT, () => console.log("You are running on port 4000"))
