@@ -7,8 +7,8 @@ import NewList from "./CreateYourOwn";
 import Festival from './Festival'
 
 class CreateYourOwn extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       genres: [],
@@ -23,28 +23,28 @@ class CreateYourOwn extends Component {
   }
   componentDidMount() {
     axios.get("/api/genres").then(response => {
-      console.log(response);
+      // console.log(response);
       this.setState({ genres: response.data });
     });
     axios.get("/api/ourfestivals").then(response => {
       this.setState({ allFestivals: response.data });
-      console.log(response.data);
+      // console.log(response.data);
     });
   }
 
-  clickFiction() {
-    this.setState({ fiction: !this.state.fiction });
-  }
+  // clickFiction() {
+  //   this.setState({ fiction: !this.state.fiction });
+  // }
 
-  clickDocumentary() {
-    this.setState({ documentary: !this.state.documentary });
-  }
-  clickShort() {
-    this.setState({ short: !this.state.short });
-  }
-  clickFeature() {
-    this.setState({ long: !this.state.long });
-  }
+  // clickDocumentary() {
+  //   this.setState({ documentary: !this.state.documentary });
+  // }
+  // clickShort() {
+  //   this.setState({ short: !this.state.short });
+  // }
+  // clickFeature() {
+  //   this.setState({ long: !this.state.long });
+  // }
   matchFestivalGenres(genre) {
     let genres = this.state.genres.slice();
     let gi = genres.findIndex(el => {
@@ -52,16 +52,16 @@ class CreateYourOwn extends Component {
 
     });
     genres[gi].isClicked = !genres[gi].isClicked;
-    console.log(genres[gi])
-    console.log('before set state....................',this.state.genres)
+    // console.log(genres[gi])
+    // console.log('before set state....................',this.state.genres)
     
     this.setState({ genres: genres }, () => {
-      console.log('after set state..............',this.state.genres)
+      // console.log('after set state..............',this.state.genres)
       let arr = [];
       this.state.genres.forEach(el => {
         el.isClicked ? arr.push(el) : null;
       });
-      console.log('array.....................',arr)
+      // console.log('array.....................',arr)
       
       const queryString = arr
         .map(e => {
@@ -78,6 +78,7 @@ class CreateYourOwn extends Component {
   }
 
   render() {
+    // console.log("props..........................",this.props)
     return (
       <div className="main">
         <div className="center-create-your-own">
@@ -108,7 +109,7 @@ class CreateYourOwn extends Component {
             <Link
               to={{
                 pathname: "/profile",
-                state: { newlist: this.state.selected }
+              state: { newlist: this.state.selected /* user: */ }
               }}
             >
               {" "}

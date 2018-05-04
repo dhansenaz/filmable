@@ -26,7 +26,7 @@ class SignUp extends Component{
                 <div className="login-input">
                     <p className='user-name'>Email</p>
                 
-                    <input onChange={ (e) => this.setState({userName: e.target.value}) } />
+                    <input onChange={ (e) => this.setState({email: e.target.value}) } />
                     <p className='user-name'>Password</p>
                     <input onChange={ (e) => this.setState({password: e.target.value})} type="password"/>
                     <button onClick={this.newUser.bind(this)}className="signup-submit" >Sign Up</button>

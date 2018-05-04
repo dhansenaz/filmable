@@ -53,7 +53,7 @@ p{
 	justify-content: space-around;
 	align-items: center;
   align-content: center;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 .create-your-own{
     border-radius: 1em;
@@ -69,7 +69,7 @@ p{
     text-shadow: 1px 1px 1px rgb(196, 194, 194), 1px 1px 1px #111;
     cursor: pointer;
     opacity: .4;
-    margin-left: -4.5em;
+    margin-left: -7em;
     
 }
 .create-your-own:hover{
@@ -104,6 +104,40 @@ p{
   height: 900px;
   margin-top: 20em;
 }
+@media only screen and (max-width: 768px){
+  .center{
+  padding-top: 5em;     
+    }
+
+  }
+@media only screen and (max-width: 375px){
+    .center{
+    padding-top: 3em;     
+    }
+
+  }
+  @media only screen and (max-width: 414px){
+    .center{
+    padding-top: 5em;     
+      }
+  
+    }
+    @media only screen and (max-width: 414px){
+      .black{
+      margin-top: 1em;  
+      height: 600px   
+        }
+    
+      }
+  @media only screen and (max-width: 375px){
+      .black{
+      margin-top: 3em; 
+      height: 400px; 
+          
+      }
+  
+    }
+  
 @media only screen and (max-width: 620px){
   .button-container{
   width:80%;
@@ -128,12 +162,11 @@ p{
   }
 
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 768px) {
 
   p {
-     font-size: 2.5em;
-     padding-top:.5em;
-     padding: 1em;
+     font-size: 3em;
+     padding: 2em;
   }
 }
 @media only screen and (max-width: 512px) {
@@ -146,40 +179,47 @@ p{
      
   }
 }
+@media only screen and (max-width: 414px) {
+
+  p {
+     font-size:1.75em;
+     padding-top:3em;
+     margin-top: 2em;
+     padding: 1.5em;
+     
+  }
+}
 @media only screen and (max-width: 375px) {
 
   p {
      font-size:1.5em;
      margin-top: 6em;
-     padding: 1.5em;
+     padding: 2em;
      margin-top: 1em;
   }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 768px) {
 
-  p2 {
-     font-size: 2.5em;
-     padding-top:.5em;
+  .p2 {
+     font-size: 1.5em;
+     padding-top:1.5em;
      padding: .75em;
   }
 }
 @media only screen and (max-width: 512px) {
 
-  p2 {
-     font-size:1.5em;
+  .p2 {
+     font-size:1em;
      padding-top:.7em;
-     margin-top: 6em;
      padding: 1em;
      
   }
 }
 @media only screen and (max-width: 375px) {
 
-  p2 {
-     font-size:1.5em;
-     margin-top: 6em;
-     padding: 1.5em;
-     margin-top: 1em;
+  .p2 {
+     font-size:1em;
+     padding: 2em;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -190,17 +230,27 @@ p{
   width: 9em;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
 
   .create-your-own {
-  font-size: 1em;
-  height:1.5em;
+  font-size: 1.5em;
+  height:3em;
   width: 10em;
-  margin-left: -10em;
+  margin-left: -6.5em;
   
+  }
+}
+@media only screen and (max-width: 375px) {
+
+  .create-your-own {
+  font-size: 1em;
+  height:1.5em;
+  width: 10em;
+  margin-left: -10em;
 
   }
 }
+
 
 @media only screen and (max-width: 800px) {
 
@@ -208,6 +258,16 @@ p{
   font-size: 1.5em;
   height:2.5em;
   width: 9em;
+
+  }
+}
+@media only screen and (max-width: 414px) {
+
+  .see-our-list {
+    font-size: 1.5em;
+    height:3em;
+    width: 10em;
+    margin-left: -6.5em;
 
   }
 }
@@ -221,3 +281,4 @@ p{
 
   }
 }
+

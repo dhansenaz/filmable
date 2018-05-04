@@ -18,12 +18,13 @@
     flex: 1;
     margin-left:-2em;
     color: rgb(250, 218, 123);
+    padding-top: 0em;
 
 }
 .signup{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 2em;
-    margin-top: 1em;
+    padding-top:1em;
     color: #F9E093;
     font-size: 1.5em;
     cursor: pointer;
@@ -32,19 +33,43 @@
 .login{
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 margin-right: 0em;
-margin-top: 1em;
+padding-top: 1em;
 color: #F9E093;
 font-size: 1.5em;
 cursor: pointer;
 
 
 }
+@media only screen and (max-width: 768px){
+    .nav-container{
+    height:13%;
+        }
 
-@media only screen and (max-width: 520px) {
+    }
+    @media only screen and (max-width: 375px){
+        .nav-container{
+        height:10%;
+            }
+    
+        }
+
+@media only screen and (max-width: 768px) {
 
     .logo{
     
         font-size: 2.5em;
+        padding-top: 1em;
+    }
+  }
+  @media only screen and (max-width: 414px) {
+
+    .logo{
+    
+        font-size: 2.5em;
+        margin-left: -3em;
+        padding-top:.5em;
+        
+
     }
   }
   @media only screen and (max-width: 375px) {
@@ -53,15 +78,26 @@ cursor: pointer;
     
         font-size: 2em;
         margin-left: -4em;
-        margin-top: 1em;
+        padding-top:.5em;
+        
     }
   }
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 768px) {
 
     .login{
     
-        font-size: 1em;
-        margin-top: 2.1em;
+        font-size: 1.5em;
+        padding-top: 2.2em;
+        
+    }
+  }
+  @media only screen and (max-width: 414px) {
+
+    .login{
+    
+        font-size: .75em;
+        padding-top:3.6em;
+        margin-left: -5em;
     }
   }
   @media only screen and (max-width: 375px) {
@@ -69,16 +105,26 @@ cursor: pointer;
     .login{
     
         font-size: 1em;
-        margin-top: 2.75em;
+        padding-top:2.05em;
         margin-left: -5em;
     }
   }
-  @media only screen and (max-width: 520px) {
+ 
+  @media only screen and (max-width: 768px) {
 
     .signup{
     
-        font-size: 1em;
-        margin-top: 2em;
+        font-size: 1.5em;
+        padding-top: 2.2em;
+    }
+  }
+  @media only screen and (max-width: 414px) {
+
+    .signup{
+    
+        font-size: .75em;
+        padding-top: 3.6em;
+        margin-left: -10em;
     }
   }
   @media only screen and (max-width: 375px) {
@@ -86,7 +132,7 @@ cursor: pointer;
     .signup{
     
         font-size: .75em;
-        margin-top: 4em;
+        padding-top: 3em;
         margin-left: -10em;
     }
   }

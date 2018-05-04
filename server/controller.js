@@ -38,6 +38,7 @@ module.exports = {
   createUser: (req, res) => {
     const db = req.app.get("db");
     const { email, password } = req.body;
+    console.log("email................",email,password)
 
     db.createUser([email, password]).then(user => {
       res.status(200).send(user);
@@ -80,7 +81,7 @@ module.exports = {
   saveFestivals: (req,res) =>{
     const db = req.app.get("db");
     db.saveFestivals().then(() => {
-        
+
     })
   }
 };

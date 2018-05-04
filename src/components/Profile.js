@@ -12,17 +12,16 @@ class Profile extends Component {
       userList: []
     };
   }
-  saveFestivals() {
-    axios.put("/api/savefestivals", {}).then(response => {
-      console.log(response);
-    });
-  }
+  
   componentDidMount(){
       if(this.props.location.state.newlist ){
           this.setState({userList: this.props.location.state.newlist })
-          console.log(this.state.userList)
       }
   }
+  OnSave(){
+      axios.post('/addfestivalstodb')
+  }
+
   render() {
     // console.log(this.state)
     // console.log(this.props)

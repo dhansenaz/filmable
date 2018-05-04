@@ -20,6 +20,7 @@ export default(
     <Switch>
 
         <Route path="/" exact component={Home} />
+        <Route path="/account" component={ Login } />
         <Route path='/createyourown' component={CreateYourOwn} />
         <Route path='/ourlist' component={OurList} />
         <Route path='/newlist' component={NewList} />
@@ -27,11 +28,7 @@ export default(
         <Route path='/signup' component={SignUp} />
         <Route path='/getyourlist' component={GetYourList} />
         <Route path='/profile' component={Profile} />
-        <Route path='/myaccount' component={MyAccount} />
-        
-        
-        
-        
+    
 
     </Switch>
 
