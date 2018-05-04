@@ -16,7 +16,8 @@ render(){
             <div className='inputaccount'>
                 <p> Welcome </p>
                 <div className="my-button-container">
-                <button className="my-list">My List</button>
+                <Link to={{pathname: "profile", state: {userlist: this.props.user.email }}}>
+                <button className="my-list">My List</button></Link>
 
                 </div>
                 {this.props.user.email}

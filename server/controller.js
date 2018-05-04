@@ -78,10 +78,22 @@ module.exports = {
         console.log(error);
       });
   },
-  saveFestivals: (req,res) =>{
-    const db = req.app.get("db");
-    db.saveFestivals().then(() => {
+  
+  createFestivalList: (req,res) => {
+    const db = req.app.get('db')
+    console.log('req', req.body)
+    // db.createFestivalList([user_id, ).then(() => {
 
-    })
+    // })
+  },
+  getUserList: (req,res) => {
+
+const db = req.app.get('db')
+db.getuserfestivals().then((festivals) => {
+  console.log("festivals............", festivals)
+  res.send(festivals)
+
+})
+
   }
 };

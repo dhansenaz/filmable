@@ -9,7 +9,8 @@ class Profile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userList: []
+      userList: [],
+      user: 0,
     };
   }
   
@@ -17,30 +18,55 @@ class Profile extends Component {
       if(this.props.location.state.newlist ){
           this.setState({userList: this.props.location.state.newlist })
       }
+      axios.post('/api/finduser', {email: this.props.location.state.userlist}).then(res => {
+        //   console.log(res)
+          this.setState({
+              user: res.data.id
+          })
+          axios.get(`/api/getuserlist/${this.state.user}`).then((r) => {
+              console.log(r)
+              this.setState({userList: r.data})
+          })
+      })
   }
-  OnSave(){
-      axios.post('/addfestivalstodb')
+
+  onSave(){
+      console.log(this.state.user)
+      if(this.state.user === undefined){
+          console.log('hey')
+          window.location = '/login'
+      } else {
+     const festivalId = this.state.userList.map((fest) => {
+            return fest.id
+     })
+     const {user} = this.state;
+     const details = [user, festivalId]
+      axios.post('/api/addfestivalstodb', {details}).then((r) => {
+          console.log(r)
+      })
+    console.log(festivalId)
+    }
   }
 
   render() {
     // console.log(this.state)
-    // console.log(this.props)
+    console.log(this.props)
     return (
       <div>
         <div className="profile-festivals-container">
-          {this.state.userList.map(e => {
+          {this.state.userList ? this.state.userList.map(e => {
             return (
               <div className="profile-festivals">
                 <Festival festival={e} />
               </div>
             );
-          })}
+          }): null}
         </div>
         <div className="save-button-container">
-          <Link to="/myaccount">
+        <Link to={{pathname: "/myaccount" }}>
             <button
               className="save-to-account"
-              onClick={this.saveFestivals.bind(this)}
+              onClick={this.onSave.bind(this)}
             >
               Save to Account
             </button>
